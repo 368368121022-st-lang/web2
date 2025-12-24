@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ใส่ชื่อ-นามสกุล ของคุณ] - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Profile Section */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd; /* รูปจำลอง */
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        /* Section Styling */
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #eff6ff;
+            color: var(--primary-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Project Card */
+        .project-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        /* Contact Button */
+        .cta-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: var(--primary-color);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="[ใส่ URL รูปภาพของคุณ หรือชื่อไฟล์รูป เช่น profile.jpg]" alt="Profile Picture" class="profile-img">
+            <h1>[ใส่ชื่อ-นามสกุล ของคุณ]</h1>
+            <p class="subtitle">[ใส่ตำแหน่งงาน เช่น Web Developer / Graphic Designer / Content Writer]</p>
+            <p>[ใส่คำอธิบายสั้นๆ เกี่ยวกับตัวเอง เช่น รับจ้างเขียนโปรแกรม ประสบการณ์ 3 ปี เน้นงานไว คุยง่าย]</p>
+        </header>
+
+        <section>
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>[เขียนแนะนำตัวเพิ่มเติม เช่น การศึกษา สิ่งที่ถนัด หรือความมุ่งมั่นในการทำงาน]</p>
+        </section>
+
+        <section>
+            <h2>ทักษะและความสามารถ</h2>
+            <div class="skills-container">
+                <span class="skill-tag">[ทักษะที่ 1 เช่น Photoshop]</span>
+                <span class="skill-tag">[ทักษะที่ 2 เช่น HTML/CSS]</span>
+                <span class="skill-tag">[ทักษะที่ 3 เช่น Video Editing]</span>
+                <span class="skill-tag">[ทักษะที่ 4]</span>
+                <span class="skill-tag">[ทักษะที่ 5]</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>ผลงานที่ผ่านมา</h2>
+            <div class="project-item">
+                <p class="project-title">[ชื่อโปรเจกต์ หรือ ชื่อบริษัทที่เคยทำ]</p>
+                <p>[อธิบายสั้นๆ ว่าทำอะไรในโปรเจกต์นี้ และผลลัพธ์เป็นอย่างไร]</p>
+            </div>
+            <div class="project-item">
+                <p class="project-title">[ชื่อโปรเจกต์ที่ 2]</p>
+                <p>[อธิบายรายละเอียดผลงาน]</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>ช่องทางการติดต่อ</h2>
+            <p><strong>Email:</strong> [ใส่ชื่ออีเมลของคุณ]</p>
+            <p><strong>Line ID:</strong> [ใส่ไอดีไลน์]</p>
+            <p><strong>เบอร์โทรศัพท์:</strong> [ใส่เบอร์โทร]</p>
+            <p><strong>GitHub/Portfolio:</strong> <a href="[ใส่ลิงก์ถ้ามี]">[ใส่ลิงก์หรือชื่อโซเชียล]</a></p>
+            
+            <a href="mailto:[ใส่อีเมลของคุณอีกครั้ง]" class="cta-button">ติดต่องานตอนนี้</a>
+        </section>
+
+        <footer>
+            &copy; 2024 [ใส่ชื่อของคุณ] - Portfolio Page
+        </footer>
+    </div>
+
+</body>
+</html>
